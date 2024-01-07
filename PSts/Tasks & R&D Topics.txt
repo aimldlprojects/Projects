@@ -1,0 +1,45 @@
+Proj plan
+
+LLM
+	
+Tasks:	
+	modular coding
+	dispalying same doc name 5 times - ui error - doc names are not coming as it is. it is getting trimmed.
+	Retrival vector DB: similarty docs are coming even for irrelevent context like when we asking about cars..
+	Custum LLM for VOX API integration to langchain
+	LLama2 for integration for SQL agents
+	endpoint and inference code for mistral & meditron
+	
+Code Examples:
+	model eval
+	fine tuning and RLFT
+	dockerasaion & deployment in linux
+		Movies backup files to S3
+		coping backup from s3 to linux instance
+		
+	git & CICD piplines
+
+R&D Tasks:
+	Integrating DB for storing chat feedbacks by user & logs
+	Reducing latency in LLM response
+	Streaming output
+	Consistency in output format - json
+	timeout error - 
+	Token limit
+	user session context specific response base don prev chat
+	reasoning or analytics over rag approach
+	understaing last year/last quater terminolagies
+	LLM should restric irrelevent context or abuse words.
+	Implementing thought process for complex querries which invovls analytics
+	token length for schema
+	handling complex queries
+	visualisations
+	analysis on query (SQL) response
+	
+R&D Topics:
+	Multi-task LLMs 
+	Best Open source LLMs for NSQL, trans,med domain specific
+	
+Learning Activity:
+	lama index
+	AWS certification
