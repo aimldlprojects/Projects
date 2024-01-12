@@ -1,0 +1,58 @@
+
+	
+Exploring the model and benchmarks which are revelant to ICSR tasks
+	Mistral
+	Meditron
+	Cohere
+	GPT-4(Az OpenAI)
+	another.
+	
+LLM Playground
+	Exploring Streamlit prompt tools - enhancements
+
+Doc Qna 
+	Feature enhancments
+		dont show doc links for genric responses
+		Convesational ret chains
+		chains of thoughts
+	Potential highlights of nouns / Names / Tittles in the LLM response.
+		option1: getting response as html o/p with styling
+		option2: sending the response to another model.
+		
+NSQL chatbot
+		
+		
+		
+UI
+	landing page:
+		rename prodects to modules  
+		disclaimer - ref: aws comp react package - 
+		icsr octopus/preprocessing
+	
+	version and sandbox playground
+	url- update as per the given link   
+	
+Deployments
+	deployment check list
+	dns entry 
+	application deloyment
+
+CICD
+	git repo
+		Clone gmg-theia
+		create new brances in user name
+		structure the chatbot app and push to git
+		
+	
+
+	
+	
+	
+
+
+
+	
+
+
+
+
