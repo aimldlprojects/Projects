@@ -46,7 +46,7 @@ CICD
 	
 
 	
-	
+Given a piece of text in a language other than English, translate it to English. Ensure that the translated text retains the original meaning. Examples: 1. Translate the following French text to English:    "Bonjour, comment ça va?" 2. Convert the following Spanish text to English:    "Hola, ¿cómo estás?" 3. Change the language of the following German text to English:    "Guten Tag, wie geht es Ihnen?" 4. Translate this Italian text to English:    "Ciao, come stai?" 5. Provide the English translation for the following Russian text:    "Привет, как дела?" Remember to keep the translation accurate and the structure of the text unchanged. Please include the original text and its English translation in your response.	
 	
 
 
