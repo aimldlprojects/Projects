@@ -1,0 +1,5 @@
+NLSQL:
+	schema and tocken limit.
+	
+
+	
