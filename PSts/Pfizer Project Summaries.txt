@@ -1,0 +1,153 @@
+Theia:
+1. Knowledge based search system on documents
+	Chatbot for Document Q&A
+	Knowledge based Q&A Chatbot
+		Challenges:
+			Difficulty finding relevent information
+			Difficulty in understanding complex documents
+			Time-consuming research
+			Information overload
+			Lack of access to expert knowledge
+			Language barriers
+		Advantages:
+			Adaptable to New Domain Knowledge
+			Understands User Context
+			Securing Information with User-level Access
+			Preserves User Conversation
+			Language Translation
+			Feedback Collection and Analysis
+			Cost-effectiveness & Scalable
+		main objectives:
+			Developing pipelines to access the user data from S3, chunking them & generating the embedding for documents.
+			Utilize VectorDB for Storing Embeddings
+			Developing the relevant document retrival pipelines using RAG
+			Leverage OpenAI Models for Generating Responses
+			Set up AWS Gateway to monitor and manage the traffic to and from the chatbot
+			Developing a user-friendly frontend interface using React
+			Implement DocumentDB for Storing User Feedbacks and Logs and utilise for finetuning the models.
+			Containerize the application components using Docker to ensure portability, scalability
+2. Natural language to query generation and data retrieval 
+	Challenges:
+		Difficulty in retrieving relevant information from RDMS.
+		Difficulty in understanding complex schemas.
+		Time-consuming query writing process.
+		Lack of expert knowledge in SQL.
+		Language barriers when interacting with the database.
+	Advantages:
+		Efficient and accurate information retrieval from RDMS.
+		Capable of executing analytical queries.
+		Provides quick data insights.
+		Adaptable to new domains and schemas.
+		Understands user context for more relevant results.
+		Secures information with user-level access controls.
+		Preserves user conversation history for continuity.
+		Collects and analyzes user feedback for continuous improvement.
+		Cost-effective and scalable solution for data retrieval needs.
+
+
+Theia:
+Objective: Developing a search application to retrieve medical grant details from multiple data sources like S3, snowflake. Building of dashboards for grants data.
+Theia:
+Approach:
+Large language models like LLama2 and Openai are used to generate the responses for user queries. VectorDB (chromaDB) is used to store the embedding. frameworks like Langchain, llamaindex are used to build the application and retrieval of embedded data. Snowflake and document DB are use for storing and retrieval of relational and document data. AWS gateway and Docker are used to deployment of the application.
+ 
+ICSR:
+1. Language Translation
+2. Entity extraction
+3. Snomed to Meddra code mapping
+4. Narrative generation
+ICSR:
+Objective: Developing a application to process the raw e2b files and extracting the import patient information, mapping to Snomed & Meddra code and generating the medical reviewer summaries.
+ICSR:
+Approach:
+Large language models like LLama2 are used to extract the entities and generating the medical reviewer summaries. AWS translate to non English language to English. AWS comprehend is used to extract the entities and get the Snomed codes.
+
+
+
+Usecase name: SnoMed to MedDRA conversion
+Usecase description: project involves the processing of E2B R3 raw XML files to extract medical reviewer narratives. Leveraging AWS Comprehend, to identify entities with SNOMED codes from the narrative and map equivalent MedDRA codes with SNOMED codes and their descriptions. The solution is delivered through a user-friendly web application using react JS, enabling users to upload XML documents and receive detailed extraction and mapping information in CSV format.
+
+Key features include the ability to perform batch processing of files stored in an S3 bucket, providing users with the convenience of storing generated files back into S3. Additionally, users have the option to review and acknowledge extracted entities and mapped codes before finalizing the storage process.
+
+This comprehensive solution streamlines the extraction and mapping of medical information, offering a seamless and efficient experience for users interacting with medical data in XML files and leverage the codes of different medical systems like MedDRA and SNOMED in one place.
+
+
+
+Usecase name: Entity Extraction from the Medical Narratives 
+Usecase description: project focuses on the efficient processing of E2B R3 raw XML files, emphasizing the extraction of medical reviewer narratives. Leveraging advanced Language Model (LLM) technologies like Llama2 and FLAN T-5, to extract entities directly from XML files and narratives. This approach reduces dependency on AWS Comprehend, leading to substantial cost savings.
+
+The extracted information is stored in S3 in a structured JSON format. Our user-friendly web application facilitates seamless interaction, allowing users to effortlessly upload XML documents or input narratives and receive entities in JSON format. Noteworthy features include batch processing of files from S3, enabling users to conveniently store generated files back into S3.
+
+Furthermore, users have the flexibility to review and acknowledge extracted entities and mapped codes before completing the storage process. This comprehensive solution not only optimizes cost but also enhances the overall user experience in working with medical data in XML files.
+
+
+
+Usecase name: Generating Medical Narratives
+Usecase description: project focuses on the efficient processing of E2B R3 raw XML files, and extracting key entities and generate the narratives for medical reviewers. This includes details such as patient information, disease occurrence, treatments administered, drugs used, and observed reactions. To streamline the medical review process, we leverage advanced Language Models (LLMs) like Llama2 and FLAN T-5.
+
+The extracted information is organized and stored in a structured document format on S3. Our user-friendly web application ensures a seamless experience, allowing users to effortlessly upload XML documents and receive well-constructed medical review narratives. Notable features of our solution include batch processing of files from S3, providing users with the convenience of storing generated files back into S3.
+
+Moreover, users enjoy the flexibility to review, acknowledge, or modify the generated narratives before finalizing the storage process. This comprehensive solution not only optimizes costs but also significantly improves the overall user experience when working with medical data in XML files. Ultimately, it aims to save time and costs for medical reviewers, enhancing efficiency in the medical review process.
+
+
+
+Usecase name: Q&A Chat Application on Document and DB data 
+Usecase description: project focuses on processing Cyber Grants data, which is primarily available in documents, embedding these documents and storing them in Vector Databases, forming the foundation for a Knowledge Base Question and Answer (Q&A) system. In addition to document data, databases integration with Language Models (LLMs) has to implement to generate SQL queries and retrieve structured data. To enhance privacy and secure sensitive data from potential breaches, open-source models are used within a local Virtual Private Cloud (VPC). User-friendly web application are designed to ensures a smooth experience, allowing users to easily select the type of source data they wish to search for. For improved user experiences, we provide the most frequently asked questions and a history of past questions.
+
+Furthermore, user feedback and comment options are incorporated to collect valuable data and continually enhance model performance. This approach empowers users to swiftly access the required information from their private data, contributing to a more efficient and secure data retrieval process."
+
+Usecase name: Q&A Chat Application on Document and DB data
+
+regas score: similarity
+
+
+SMPC to PIL
+
+	Challenges:
+	Difficulty in converting SMPCs to PILs without errors.
+	Difficulty in understanding medical terms.
+	Time-consuming process with out expertise knowledge.
+	Lack of medical domain knowledge.
+
+	1. Problem Statement:
+	 
+	Converting Summary of Product Characteristics (SMPC) into Patient Information Leaflets (PIL) which is user understable document with less and complex medical terms. 
+	SMPCs are designed for clinical experts and contain technical language, 
+	PILs are designed for general public.
+	its used to explain complex medical information in a clear and understandable manner for the general public. 
+
+
+
+
+	intro:
+	good morning and good evening every one. Thanks for joining the call. 
+	today  i will walk you through the Theia project which we are doing for pfizer. 
+
+	The Theia project focuses primarily on medical grants, which is mainly related to drug research by individual personal  / organizations, their status, approval, and payments. We are developing a RAG-based information system where over 600 documents are embedded and stored. The chatbot is built upon this system, enabling users to access and interact with the extensive repository of grant-related data seamlessly. 
+
+	SMPC:
+	Our primary objective is to implement the Claude v2 LLM along with a comprehensive vector database to facilitate the seamless conversion of SMPCs to PILs. 
+	By leveraging LLM's Reasoning capabilities, we aim to automate the PIL generation process, making it more efficient, accurate, and accessible to all.
+
+	End users: Pfizer’s International Labeling Group (ILG)
+		Pfizer’s International Labeling Group (ILG) has oversight responsibility for creating and maintaining drug product label documents for Asia Pacific, Europe, Middle East, Africa, and the Americas (excluding the USA)
+
+	SMPC (Summary of Product Characteristics) to PIL (Patient Information Leaflet) conversion process greatly benefits Pfizer's labeling team by making the creation of patient-friendly clinical information more efficient and consistent. 
+
+	Advantages:
+		1. Saves time and effort, ensures consistency, and maintains regulatory compliance.
+		2. Ensures accurate medical information.
+		3. Easy to to meet the specific regulatory requirements of different international markets, aiding in faster product launches and market expansions.
+
+
+it supports operational activities, 
+spotifire/ dataiku
+
+
+sci expt:
+profile search api
+	fileters:
+		contry
+		organization (NA in sf)
+		scientific leader (NA in sf)
+		digital leader (NA in sf) 
